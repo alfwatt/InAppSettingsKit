@@ -40,6 +40,8 @@
 	_selection.specifier = _currentSpecifier;
 }
 
+#if IL_UI_KIT
+#pragma mark - UIViewController
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
@@ -75,8 +77,7 @@
 	}
 }
 
-#pragma mark -
-#pragma mark UITableView delegates
+#pragma mark - UITableView delegates
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	return 1;
@@ -114,5 +115,5 @@
 - (CGSize)preferredContentSize {
     return [[self view] sizeThatFits:CGSizeMake(320, 2000)];
 }
-
+#endif
 @end

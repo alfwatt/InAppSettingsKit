@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E42ADAA1168202D700295D85"
-               BuildableName = "InAppSettingsKitTests.xctest"
-               BlueprintName = "InAppSettingsKitTests"
+               BlueprintIdentifier = "DAC156221B54533D00655031"
+               BuildableName = "InAppSettingsKit.framework"
+               BlueprintName = "InAppSettingsKit.framework (iOS)"
                ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,17 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E42ADAA1168202D700295D85"
-               BuildableName = "InAppSettingsKitTests.xctest"
-               BlueprintName = "InAppSettingsKitTests"
-               ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DAC156221B54533D00655031"
+            BuildableName = "InAppSettingsKit.framework"
+            BlueprintName = "InAppSettingsKit.framework (iOS)"
+            ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -55,9 +54,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E42ADAA1168202D700295D85"
-            BuildableName = "InAppSettingsKitTests.xctest"
-            BlueprintName = "InAppSettingsKitTests"
+            BlueprintIdentifier = "DAC156221B54533D00655031"
+            BuildableName = "InAppSettingsKit.framework"
+            BlueprintName = "InAppSettingsKit.framework (iOS)"
             ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,6 +69,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DAC156221B54533D00655031"
+            BuildableName = "InAppSettingsKit.framework"
+            BlueprintName = "InAppSettingsKit.framework (iOS)"
+            ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

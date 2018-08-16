@@ -7,7 +7,7 @@
 /// This is used for PSMultiValueSpecifier and PSRadioGroupSpecifier
 @interface IASKMultipleValueSelection : NSObject
 
-@property (nonatomic, assign) UITableView *tableView;
+@property (nonatomic, assign) ILTableView *tableView;
 @property (nonatomic, retain) IASKSpecifier *specifier;
 @property (nonatomic, assign) NSInteger section;
 @property (nonatomic, copy, readonly) NSIndexPath *checkedItem;
@@ -15,6 +15,6 @@
 
 - (id)initWithSettingsStore:(id<IASKSettingsStore>)settingsStore;
 - (void)selectRowAtIndexPath:(NSIndexPath *)indexPath;
-- (void)updateSelectionInCell:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath;
+- (void)updateSelectionInCell:(ILTableViewCell *)cell indexPath:(NSIndexPath *)indexPath;
 
 @end

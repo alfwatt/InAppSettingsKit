@@ -41,12 +41,16 @@ static NSString *kIASKCredits = @"Powered by InAppSettingsKit"; // Leave this as
 
 CGRect IASKCGRectSwap(CGRect rect);
 
-@interface IASKAppSettingsViewController () <UITextViewDelegate> {
+@interface IASKAppSettingsViewController ()
+#if IL_UI_KIT
+<UITextViewDelegate>
+#endif
+{
     IASKSettingsReader		*_settingsReader;
     id<IASKSettingsStore>  _settingsStore;
     
     id                      _currentFirstResponder;
-    __weak UIViewController *_currentChildViewController;
+    __weak ILViewController *_currentChildViewController;
     BOOL _reloadDisabled;
 	/// The selected index for every group (in case it's a radio group).
 	NSArray *_selections;
@@ -94,7 +98,9 @@ CGRect IASKCGRectSwap(CGRect rect);
 
 - (void)setFile:(NSString *)file {
     _file = [file copy];
+#if IL_UI_KIT
     self.tableView.contentOffset = CGPointMake(0, -self.tableView.contentInset.top);
+#endif
     self.settingsReader = nil; // automatically initializes itself
     if (!_reloadDisabled) {
 		[self.tableView reloadData];
@@ -129,9 +135,14 @@ CGRect IASKCGRectSwap(CGRect rect);
 
 #pragma mark standard view controller methods
 - (id)init {
+#if IL_UI_KIT
     return [self initWithStyle:UITableViewStyleGrouped];
+#else
+    return [super init];
+#endif
 }
 
+#if IL_UI_KIT
 - (id)initWithStyle:(UITableViewStyle)style {
     if (style != UITableViewStyleGrouped) {
         NSLog(@"WARNING: only UITableViewStyleGrouped style is supported by InAppSettingsKit.");
@@ -141,15 +152,10 @@ CGRect IASKCGRectSwap(CGRect rect);
     }
     return self;
 }
+#endif
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (nibNameOrNil) {
-		NSLog (@"%@ is now deprecated, we are moving away from nibs.", NSStringFromSelector(_cmd));
-		self = [super initWithStyle:UITableViewStyleGrouped];
-	} else {
-		self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-	}
-	if (self) {
+	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		[self configure];
 	}
 	return self;
@@ -172,11 +178,13 @@ CGRect IASKCGRectSwap(CGRect rect);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#if IL_UI_KIT
 	UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapToEndEdit:)];
     tapGesture.cancelsTouchesInView = NO;
     [self.tableView addGestureRecognizer:tapGesture];
+#endif
 }
-
+#if IL_UI_KIT
 - (void)viewWillAppear:(BOOL)animated {
 	NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
 
@@ -253,6 +261,7 @@ CGRect IASKCGRectSwap(CGRect rect);
 
 	[super viewDidDisappear:animated];
 }
+#endif
 
 - (void)setHiddenKeys:(NSSet *)theHiddenKeys {
 	[self setHiddenKeys:theHiddenKeys animated:NO];
@@ -260,6 +269,7 @@ CGRect IASKCGRectSwap(CGRect rect);
 
 
 - (void)setHiddenKeys:(NSSet*)theHiddenKeys animated:(BOOL)animated {
+#if IL_UI_KIT
     if (_hiddenKeys != theHiddenKeys) {
         NSSet *oldHiddenKeys = _hiddenKeys;
         _hiddenKeys = theHiddenKeys;
@@ -348,6 +358,7 @@ CGRect IASKCGRectSwap(CGRect rect);
     if([childViewController respondsToSelector:@selector(setHiddenKeys:animated:)]) {
         [(id)childViewController setHiddenKeys:theHiddenKeys animated:animated];
     }
+#endif
 }
 
 - (void)setNeverShowPrivacySettings:(BOOL)neverShowPrivacySettings {
@@ -374,9 +385,9 @@ CGRect IASKCGRectSwap(CGRect rect);
 }
 
 - (void)toggledValue:(id)sender {
+#if IL_UI_KIT
     IASKSwitch *toggle    = (IASKSwitch*)sender;
     IASKSpecifier *spec   = [_settingsReader specifierForKey:[toggle key]];
-    
     if ([toggle isOn]) {
         if ([spec trueValue] != nil) {
             [self.settingsStore setObject:[spec trueValue] forKey:[toggle key]];
@@ -393,24 +404,27 @@ CGRect IASKCGRectSwap(CGRect rect);
             [self.settingsStore setBool:NO forKey:[toggle key]]; 
         }
     }
-    [[NSNotificationCenter defaultCenter] postNotificationName:kIASKAppSettingChanged
-                                                        object:self
-                                                      userInfo:[NSDictionary dictionaryWithObject:[self.settingsStore objectForKey:[toggle key]]
-                                                                                           forKey:[toggle key]]];
+    [[NSNotificationCenter defaultCenter]
+        postNotificationName:kIASKAppSettingChanged
+        object:self
+        userInfo:@{[self.settingsStore objectForKey:[toggle key]]: [toggle key]};
+#endif
 }
 
 - (void)sliderChangedValue:(id)sender {
+#if IL_UI_KIT
     IASKSlider *slider = (IASKSlider*)sender;
     [self.settingsStore setFloat:[slider value] forKey:[slider key]];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kIASKAppSettingChanged
-                                                        object:self
-                                                      userInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:[slider value]]
-                                                                                           forKey:[slider key]]];
+    [[NSNotificationCenter defaultCenter]
+        postNotificationName:kIASKAppSettingChanged
+        object:self
+        userInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:[slider value]] forKey:[slider key]]];
+#endif
 }
 
 
-#pragma mark -
-#pragma mark UITableView Functions
+#if IL_UI_KIT
+#pragma mark - UITableView Functions
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	return [self.settingsReader numberOfSections];
@@ -915,11 +929,11 @@ CGRect IASKCGRectSwap(CGRect rect);
     [self dismissViewControllerAnimated:YES
                              completion:nil];
 }
+#endif
 
-#pragma mark -
-#pragma mark UITextFieldDelegate Functions
+#pragma mark - ILTextFieldDelegate Functions
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
+- (void)textFieldDidBeginEditing:(ILTextField *)textField {
 	self.currentFirstResponder = textField;
 }
 
@@ -932,25 +946,27 @@ CGRect IASKCGRectSwap(CGRect rect);
                                                                                            forKey:[text key]]];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+- (BOOL)textFieldShouldReturn:(ILTextField *)textField{
 	[textField resignFirstResponder];
 	self.currentFirstResponder = nil;
 	return YES;
 }
 
+#if IL_UI_KIT
 - (void)singleTapToEndEdit:(UIGestureRecognizer *)sender {
     [self.tableView endEditing:NO];
 }
+#endif
 
 #pragma mark - UITextViewDelegate
 
-- (void)textViewDidEndEditing:(UITextView *)textView {
+- (void)textViewDidEndEditing:(ILTextView *)textView {
 	self.currentFirstResponder = textView;
 }
 
 - (void)textViewDidChange:(IASKTextView *)textView {
 	[self cacheRowHeightForTextView:textView];
-	
+#if IL_UI_KIT
 	CGRect visibleTableRect = UIEdgeInsetsInsetRect(self.tableView.bounds, self.tableView.contentInset);
 	NSIndexPath *indexPath = [self.settingsReader indexPathForKey:textView.key];
 	CGRect cellFrame = [self.tableView rectForRowAtIndexPath:indexPath];
@@ -958,7 +974,7 @@ CGRect IASKCGRectSwap(CGRect rect);
 	if (!CGRectContainsRect(visibleTableRect, cellFrame)) {
 		[self.tableView scrollRectToVisible:CGRectInset(cellFrame, 0, - 30) animated:YES];
 	}
-
+#endif
 	[_settingsStore setObject:textView.text forKey:textView.key];
 	[[NSNotificationCenter defaultCenter] postNotificationName:kIASKAppSettingChanged
 														object:textView.key
@@ -967,11 +983,12 @@ CGRect IASKCGRectSwap(CGRect rect);
 }
 
 - (void)cacheRowHeightForTextView:(IASKTextView *)textView {
+#if IL_UI_KIT
 	CGFloat maxHeight = self.tableView.bounds.size.height - self.tableView.contentInset.top - self.tableView.contentInset.bottom - 60;
 	CGFloat contentHeight = [textView sizeThatFits:CGSizeMake(textView.frame.size.width, 10000)].height + 16;
 	self.rowHeights[textView.key] = @(MAX(44, MIN(maxHeight, contentHeight)));
 	textView.scrollEnabled = contentHeight > maxHeight;
-
+#endif
 	[self.tableView beginUpdates];
 	[self.tableView endUpdates];
 }
@@ -984,6 +1001,7 @@ CGRect IASKCGRectSwap(CGRect rect);
 
 static NSDictionary *oldUserDefaults = nil;
 - (void)userDefaultsDidChange {
+#if IL_UI_KIT
 	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 		IASKSettingsStoreUserDefaults *udSettingsStore = (id)self.settingsStore;
 		NSDictionary *currentDict = udSettingsStore.defaults.dictionaryRepresentation;
@@ -1007,6 +1025,7 @@ static NSDictionary *oldUserDefaults = nil;
 			[self.tableView reloadRowsAtIndexPaths:indexPathsToUpdate withRowAnimation:UITableViewRowAnimationAutomatic];
 		}
 	});
+#endif
 }
 
 - (void)didChangeSettingViaIASK:(NSNotification*)notification {

@@ -19,7 +19,7 @@
 
 @implementation IASKTextViewCell
 
-
+#if IL_UI_KIT
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	if ((self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier])) {
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -51,5 +51,6 @@
 	
 	self.textView.frame = UIEdgeInsetsInsetRect(self.bounds, padding);
 }
+#endif
 
 @end

@@ -17,7 +17,7 @@
 #import <KitBridge/KitBridge.h>
 #import "IASKTextView.h"
 
-@interface IASKTextViewCell : UITableViewCell
+@interface IASKTextViewCell : ILTableViewCell
 
 @property (nonatomic, strong) IASKTextView *textView;
 

@@ -28,7 +28,11 @@
 }
 
 - (NSIndexPath *)checkedItem {
+#if IL_UI_KIT
     return [NSIndexPath indexPathForRow:_checkedIndex inSection:_section];;
+#else
+    return nil;
+#endif
 }
 
 - (void)updateCheckedItem {
@@ -67,6 +71,7 @@
 #pragma mark - selection
 
 - (void)selectRowAtIndexPath:(NSIndexPath *)indexPath {
+#if IL_UI_KIT
 
     if (indexPath == self.checkedItem) {
         [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -87,9 +92,10 @@
                                                       userInfo:@{
                                                           _specifier.key: values[indexPath.row]
                                                       }];
-};
+#endif
+}
 
-- (void)updateSelectionInCell:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath {
+- (void)updateSelectionInCell:(ILTableViewCell *)cell indexPath:(NSIndexPath *)indexPath {
     if ([indexPath isEqual:self.checkedItem]) {
         [self selectCell:cell];
     } else {
@@ -97,16 +103,19 @@
     }
 }
 
-- (void)selectCell:(UITableViewCell *)cell {
+- (void)selectCell:(ILTableViewCell *)cell {
+#if IL_UI_KIT
     [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
     IASK_IF_PRE_IOS7([[cell textLabel] setTextColor:kIASKgrayBlueColor];);
+#endif
 }
 
-- (void)deselectCell:(UITableViewCell *)cell {
+- (void)deselectCell:(ILTableViewCell *)cell {
+#if IL_UI_KIT
     [cell setAccessoryType:UITableViewCellAccessoryNone];
     IASK_IF_PRE_IOS7([[cell textLabel] setTextColor:[UIColor darkTextColor]];);
+#endif
 }
-
 
 #pragma mark Notifications
 

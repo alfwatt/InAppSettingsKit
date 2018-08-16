@@ -41,11 +41,13 @@
         self.localizationTable = [_settingsDictionary objectForKey:@"StringsTable"];
         if (!self.localizationTable)
         {
+#if IL_UI_KIT
             // Look for localization file using filename
             self.localizationTable = [[[[plistFilePath stringByDeletingPathExtension] // removes '.plist'
                                         stringByDeletingPathExtension] // removes potential '.inApp'
                                        lastPathComponent] // strip absolute path
                                       stringByReplacingOccurrencesOfString:[self platformSuffixForInterfaceIdiom:UI_USER_INTERFACE_IDIOM()] withString:@""]; // removes potential '~device' (~ipad, ~iphone)
+#endif
             if([self.settingsBundle pathForResource:self.localizationTable ofType:@"strings"] == nil){
                 // Could not find the specified localization: use default
                 self.localizationTable = @"Root";
@@ -102,7 +104,9 @@
 	NSMutableDictionary *dict = [@{kIASKTitle: [[self getBundle] localizedStringForKey:@"Privacy" value:@"" table:@"IASKLocalizable"],
 								   kIASKKey: @"IASKPrivacySettingsCellKey",
 								   kIASKType: kIASKOpenURLSpecifier,
+#if IL_UI_KIT
 								   kIASKFile: UIApplicationOpenSettingsURLString,
+#endif
 								   } mutableCopy];
 	NSString *subtitle = [[self getBundle] localizedStringForKey:@"Open in Settings app" value:@"" table:@"IASKLocalizable"];
 	if (subtitle.length) {
@@ -168,9 +172,11 @@
                 [dataSource addObject:[NSMutableArray array]];
             }
             
+#if IL_UI_KIT
             if ([newSpecifier.userInterfaceIdioms containsObject:@(UI_USER_INTERFACE_IDIOM())]) {
                 [(NSMutableArray*)dataSource.lastObject addObject:newSpecifier];
             }
+#endif
         }
     }
     [self setDataSource:dataSource];
@@ -202,12 +208,17 @@
 - (IASKSpecifier*)specifierForIndexPath:(NSIndexPath*)indexPath {
     int headingCorrection = [self _sectionHasHeading:indexPath.section] ? 1 : 0;
     
-    IASKSpecifier *specifier = [[[self dataSource] objectAtIndex:indexPath.section] objectAtIndex:(indexPath.row+headingCorrection)];
+#if IL_UI_KIT
+    IASKSpecifier *specifier = [[[self dataSource] objectAtIndex:indexPath.section] objectAtIndex:(indexPath.row + headingCorrection)];
+#else
+    IASKSpecifier *specifier = [[[self dataSource] objectAtIndex:indexPath.section] objectAtIndex:(indexPath.item + headingCorrection)];
+#endif
     specifier.settingsReader = self;
     return specifier;
 }
 
 - (NSIndexPath*)indexPathForKey:(NSString *)key {
+#if IL_UI_KIT
     for (NSUInteger sectionIndex = 0; sectionIndex < self.dataSource.count; sectionIndex++) {
         NSArray *section = [self.dataSource objectAtIndex:sectionIndex];
         for (NSUInteger rowIndex = 0; rowIndex < section.count; rowIndex++) {
@@ -218,6 +229,7 @@
             }
         }
     }
+#endif
     return nil;
 }
 
@@ -265,6 +277,7 @@
     return [[self.settingsBundle bundlePath] stringByAppendingPathComponent:image];
 }
 
+#if IL_UI_KIT
 - (NSString *)platformSuffixForInterfaceIdiom:(UIUserInterfaceIdiom) interfaceIdiom {
     switch (interfaceIdiom) {
         case UIUserInterfaceIdiomPad: return @"~ipad";
@@ -272,6 +285,7 @@
 		default: return @"~iphone";
     }
 }
+#endif
 
 - (NSString *)file:(NSString *)file
         withBundle:(NSString *)bundle
@@ -315,8 +329,12 @@
     
     NSArray *extensions = @[@".inApp.plist", @".plist"];
     
+#if IL_UI_KIT
     NSArray *plattformSuffixes = @[[self platformSuffixForInterfaceIdiom:UI_USER_INTERFACE_IDIOM()],
                                    @""];
+#else
+    NSArray *plattformSuffixes = @[@""];
+#endif
     
     NSArray *preferredLanguages = [NSLocale preferredLanguages];
     NSArray *languageFolders = @[[ (preferredLanguages.count ? [preferredLanguages objectAtIndex:0] : @"en") stringByAppendingString:kIASKBundleLocaleFolderExtension],

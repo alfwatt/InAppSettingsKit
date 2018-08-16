@@ -25,15 +25,19 @@
 #pragma mark NSObject
 
 - (void)dealloc {
+#if IL_UI_KIT
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UITextViewTextDidChangeNotification object:self];
+#endif
 }
 
 
 #pragma mark UIView
 
 - (void)configure {
+#if IL_UI_KIT
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateShouldDrawPlaceholder) name:UITextViewTextDidChangeNotification object:self];
-	
+#endif
+
 	_shouldDrawPlaceholder = NO;
 }
 
@@ -56,7 +60,9 @@
 	[super drawRect:rect];
 	
 	if (_shouldDrawPlaceholder) {
-		[_placeholder drawAtPoint:CGPointMake(5.0, 8.0) withAttributes:@{NSFontAttributeName: self.font, NSForegroundColorAttributeName: [UIColor colorWithRed:0.f green:0.f blue:0.0981f alpha:0.22f]}];
+		[_placeholder drawAtPoint:CGPointMake(5.0, 8.0) withAttributes:@{
+            NSFontAttributeName: self.font,
+            NSForegroundColorAttributeName: [ILColor colorWithRed:0.f green:0.f blue:0.0981f alpha:0.22f]}];
 	}
 }
 
@@ -82,7 +88,9 @@
 
 - (void)setFrame:(CGRect)frame {
 	super.frame = frame;
+#if IL_UI_KIT
 	[self setNeedsDisplay];
+#endif
 }
 
 #pragma mark Private Methods
@@ -92,7 +100,9 @@
 	_shouldDrawPlaceholder = self.placeholder && self.text.length == 0;
 	
 	if (prev != _shouldDrawPlaceholder) {
+#if IL_UI_KIT
 		[self setNeedsDisplay];
+#endif
 	}
 }
 

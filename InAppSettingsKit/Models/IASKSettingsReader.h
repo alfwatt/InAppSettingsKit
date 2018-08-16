@@ -268,6 +268,7 @@ _Pragma("clang diagnostic pop")
             suffix:(NSString *)suffix
          extension:(NSString *)extension;
 - (NSString *)locateSettingsFile:(NSString *)file;
-
+#if IL_UI_KIT
 - (NSString *)platformSuffixForInterfaceIdiom:(UIUserInterfaceIdiom) interfaceIdiom;
+#endif
 @end

@@ -20,7 +20,7 @@
 @class IASKSpecifier;
 @class IASKSettingsReader;
 
-@interface IASKSpecifierValuesViewController : UITableViewController <IASKViewController>
+@interface IASKSpecifierValuesViewController : ILTableViewController <IASKViewController>
 
 @property (nonatomic, retain) IASKSpecifier *currentSpecifier;
 

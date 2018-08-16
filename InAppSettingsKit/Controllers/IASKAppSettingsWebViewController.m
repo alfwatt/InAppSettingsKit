@@ -37,13 +37,15 @@
 }
 
 - (void)loadView {
+#if IL_UI_KIT
     self.webView = [[UIWebView alloc] init];
     self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.webView.delegate = self;
-    
+#endif
     self.view = self.webView;
 }
 
+#if IL_UI_KIT
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
@@ -144,5 +146,5 @@
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+#endif
 @end

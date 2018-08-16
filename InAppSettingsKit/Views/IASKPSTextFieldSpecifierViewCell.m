@@ -19,6 +19,7 @@
 #import "IASKSettingsReader.h"
 
 @implementation IASKPSTextFieldSpecifierViewCell
+#if IL_UI_KIT
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -67,5 +68,5 @@
 	}
 	_textField.frame = textFieldFrame;
 }
-
+#endif
 @end

@@ -68,8 +68,8 @@
 - (NSString*)segueIdentifier;
 - (Class)buttonClass;
 - (SEL)buttonAction;
-- (UIImage *)cellImage;
-- (UIImage *)highlightedCellImage;
+- (ILImage *)cellImage;
+- (ILImage *)highlightedCellImage;
 - (BOOL)adjustsFontSizeToFitWidth;
 - (NSTextAlignment)textAlignment;
 - (NSArray *)userInterfaceIdioms;

@@ -311,7 +311,7 @@
 - (BOOL)isSecure {
     return [[_specifierDict objectForKey:kIASKIsSecure] boolValue];
 }
-
+#if IL_UI_KIT
 - (UIKeyboardType)keyboardType {
     if ([[_specifierDict objectForKey:KIASKKeyboardType] isEqualToString:kIASKKeyboardAlphabet]) {
         return UIKeyboardTypeDefault;
@@ -371,23 +371,23 @@
     }
     return UITextAutocorrectionTypeDefault;
 }
-
-- (UIImage *)cellImage
+#endif
+- (ILImage *)cellImage
 {
     NSString *imageName = [_specifierDict objectForKey:kIASKCellImage];
     if( imageName.length == 0 )
         return nil;
     
-    return [UIImage imageNamed:imageName];
+    return [ILImage imageNamed:imageName];
 }
 
-- (UIImage *)highlightedCellImage
+- (ILImage *)highlightedCellImage
 {
     NSString *imageName = [[_specifierDict objectForKey:kIASKCellImage ] stringByAppendingString:@"Highlighted"];
     if( imageName.length == 0 )
         return nil;
 
-    return [UIImage imageNamed:imageName];
+    return [ILImage imageNamed:imageName];
 }
 
 - (BOOL)adjustsFontSizeToFitWidth {
@@ -413,11 +413,14 @@
 }
 
 - (NSArray *)userInterfaceIdioms {
+#if IL_UI_KIT
     NSArray *idiomStrings = _specifierDict[kIASKSupportedUserInterfaceIdioms];
     if (idiomStrings.count == 0) {
         return @[@(UIUserInterfaceIdiomPhone), @(UIUserInterfaceIdiomPad)];
     }
+#endif
     NSMutableArray *idioms = [NSMutableArray new];
+#if IL_UI_KIT
     for (NSString *idiomString in idiomStrings) {
         if ([idiomString isEqualToString:@"Phone"]) {
             [idioms addObject:@(UIUserInterfaceIdiomPhone)];
@@ -425,6 +428,7 @@
             [idioms addObject:@(UIUserInterfaceIdiomPad)];
         }
     }
+#endif
     return idioms;
 }
 

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAC156221B54533D00655031"
-               BuildableName = "InAppSettingsKit.framework"
-               BlueprintName = "InAppSettingsKitFramework"
+               BlueprintIdentifier = "E42ADA8E168202D700295D85"
+               BuildableName = "libInAppSettingsKit.a"
+               BlueprintName = "InAppSettingsKit.a (iOS)"
                ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,19 +26,19 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E42ADAA1168202D700295D85"
+               BuildableName = "InAppSettingsKitTests.xctest"
+               BlueprintName = "InAppSettingsKitTests"
+               ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAC156221B54533D00655031"
-            BuildableName = "InAppSettingsKit.framework"
-            BlueprintName = "InAppSettingsKitFramework"
-            ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +46,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -56,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAC156221B54533D00655031"
-            BuildableName = "InAppSettingsKit.framework"
-            BlueprintName = "InAppSettingsKitFramework"
+            BlueprintIdentifier = "E42ADA8E168202D700295D85"
+            BuildableName = "libInAppSettingsKit.a"
+            BlueprintName = "InAppSettingsKit.a (iOS)"
             ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,15 +70,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAC156221B54533D00655031"
-            BuildableName = "InAppSettingsKit.framework"
-            BlueprintName = "InAppSettingsKitFramework"
-            ReferencedContainer = "container:InAppSettingsKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

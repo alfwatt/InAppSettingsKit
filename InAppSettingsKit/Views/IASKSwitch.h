@@ -17,7 +17,7 @@
 #import <KitBridge/KitBridge.h>
 
 
-@interface IASKSwitch : UISwitch
+@interface IASKSwitch : ILSwitch
 
 @property (nonatomic, copy) NSString *key;
 

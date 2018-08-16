@@ -17,7 +17,7 @@
 #import <KitBridge/KitBridge.h>
 
 
-@interface IASKSlider : UISlider
+@interface IASKSlider : ILSlider
 
 @property (nonatomic, copy) NSString *key;
 

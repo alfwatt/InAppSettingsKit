@@ -30,6 +30,8 @@
 - (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender;
 
 @optional
+
+#if IL_UI_KIT
 #pragma mark - UITableView header customization
 - (CGFloat) settingsViewController:(id<IASKViewController>)settingsViewController
                          tableView:(UITableView *)tableView
@@ -53,6 +55,7 @@
           mailComposeController:(MFMailComposeViewController*)controller
             didFinishWithResult:(MFMailComposeResult)result
                           error:(NSError*)error;
+#endif
 
 #pragma mark - Custom MultiValues
 - (NSArray*)settingsViewController:(IASKAppSettingsViewController*)sender valuesForSpecifier:(IASKSpecifier*)specifier;
@@ -61,11 +64,16 @@
 #pragma mark - respond to button taps
 - (void)settingsViewController:(IASKAppSettingsViewController*)sender buttonTappedForKey:(NSString*)key __attribute__((deprecated)); // use the method below with specifier instead
 - (void)settingsViewController:(IASKAppSettingsViewController*)sender buttonTappedForSpecifier:(IASKSpecifier*)specifier;
-- (void)settingsViewController:(IASKAppSettingsViewController*)sender tableView:(UITableView *)tableView didSelectCustomViewSpecifier:(IASKSpecifier*)specifier;
+- (void)settingsViewController:(IASKAppSettingsViewController*)sender tableView:(ILTableView *)tableView didSelectCustomViewSpecifier:(IASKSpecifier*)specifier;
 @end
 
 
-@interface IASKAppSettingsViewController : UITableViewController <IASKViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate>
+@interface IASKAppSettingsViewController : ILTableViewController
+#if IL_UI_KIT
+<IASKViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate>
+#else
+<IASKViewController>
+#endif
 
 @property (nonatomic, assign) IBOutlet id delegate;
 @property (nonatomic, copy) NSString *file;
@@ -73,6 +81,10 @@
 @property (nonatomic, assign) IBInspectable BOOL showDoneButton;
 @property (nonatomic, retain) NSSet *hiddenKeys;
 @property (nonatomic) IBInspectable BOOL neverShowPrivacySettings;
+
+#if IL_APP_KIT
+@property (nonatomic, retain) IBOutlet ILTableView* tableView;
+#endif
 
 - (void)synchronizeSettings;
 - (IBAction)dismiss:(id)sender;
