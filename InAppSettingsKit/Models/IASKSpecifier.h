@@ -15,7 +15,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import <KitBridge/KitBridge.h>
 
 @class IASKSettingsReader;
 
@@ -55,9 +55,11 @@
 - (NSString*)maximumValueImage;
 - (BOOL)isSecure;
 - (BOOL)displaySortedByTitle;
+#if IL_UI_KIT
 - (UIKeyboardType)keyboardType;
 - (UITextAutocapitalizationType)autocapitalizationType;
 - (UITextAutocorrectionType)autoCorrectionType;
+#endif
 - (NSString*)footerText;
 - (Class)viewControllerClass;
 - (SEL)viewControllerSelector;

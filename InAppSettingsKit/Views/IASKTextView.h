@@ -14,9 +14,9 @@
 //  This code is licensed under the BSD license that is available at: http://www.opensource.org/licenses/bsd-license.php
 //
 
-#import <UIKit/UIKit.h>
+#import <KitBridge/KitBridge.h>
 
-@interface IASKTextView : UITextView
+@interface IASKTextView : ILTextView
 
 @property (nonatomic, copy) NSString *key;
 @property (strong, nonatomic) NSString *placeholder;

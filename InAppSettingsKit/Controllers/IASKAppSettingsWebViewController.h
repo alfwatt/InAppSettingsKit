@@ -14,8 +14,11 @@
 //  This code is licensed under the BSD license that is available at: http://www.opensource.org/licenses/bsd-license.php
 //
 
-#import <UIKit/UIKit.h>
+#import <KitBridge/KitBridge.h>
+#if IL_UI_KIT
 #import <MessageUI/MessageUI.h>
+#endif
+
 #import "IASKSpecifier.h"
 
 @interface IASKAppSettingsWebViewController : UIViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate>

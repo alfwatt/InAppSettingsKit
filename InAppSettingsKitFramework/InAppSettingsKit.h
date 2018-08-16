@@ -6,7 +6,7 @@
 //  This code is licensed under the BSD license that is available at: http://www.opensource.org/licenses/bsd-license.php
 //
 
-#import <UIKit/UIKit.h>
+#import <KitBridge/KitBridge.h>
 
 //! Project version number for InAppSettingsKit.
 FOUNDATION_EXPORT double InAppSettingsKitVersionNumber;

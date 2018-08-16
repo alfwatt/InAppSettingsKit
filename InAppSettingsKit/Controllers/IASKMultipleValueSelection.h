@@ -1,4 +1,4 @@
-#import <UIKit/UIKit.h>
+#import <KitBridge/KitBridge.h>
 
 @class IASKSpecifier;
 @protocol IASKSettingsStore;

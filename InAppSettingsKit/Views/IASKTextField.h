@@ -14,10 +14,10 @@
 //  This code is licensed under the BSD license that is available at: http://www.opensource.org/licenses/bsd-license.php
 //
 
-#import <UIKit/UIKit.h>
+#import <KitBridge/KitBridge.h>
 
 
-@interface IASKTextField : UITextField
+@interface IASKTextField : ILTextField
 
 @property (nonatomic, copy) NSString *key;
 

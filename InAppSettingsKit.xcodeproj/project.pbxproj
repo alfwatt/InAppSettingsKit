@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AA106821916565D4D6221F9 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */; };
 		1AA1073290B7DC27EB0C6A70 /* IASKMultipleValueSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */; };
+		75C6A2D621262D1700367C24 /* KitBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A2CD21262B2900367C24 /* KitBridge.framework */; };
 		AA0A85EB1C89C9A70036F778 /* IASKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5261C88974100B20124 /* IASKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0A85EC1C89C9AB0036F778 /* IASKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5AB5271C88974100B20124 /* IASKTextView.m */; };
 		AA0A85ED1C89C9B30036F778 /* IASKTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5281C88974100B20124 /* IASKTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,7 +67,6 @@
 		E401BD4916820A2D00EAF534 /* IASKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADADE1682036500295D85 /* IASKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E401BD4B16820BBA00EAF534 /* IASKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E401BD4A16820BBA00EAF534 /* IASKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E42ADA93168202D700295D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42ADA92168202D700295D85 /* Foundation.framework */; };
-		E42ADAA6168202D700295D85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42ADAA5168202D700295D85 /* UIKit.framework */; };
 		E42ADAA7168202D700295D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42ADA92168202D700295D85 /* Foundation.framework */; };
 		E42ADAAA168202D700295D85 /* libInAppSettingsKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42ADA8F168202D700295D85 /* libInAppSettingsKit.a */; };
 		E42ADAB0168202D700295D85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E42ADAAE168202D700295D85 /* InfoPlist.strings */; };
@@ -91,6 +91,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		75C6A2CA21262B2900367C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75DCBEE21ED2C81E00538D87;
+			remoteInfo = "KitBridge (macOS)";
+		};
+		75C6A2CC21262B2900367C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75DCBEF21ED2C84B00538D87;
+			remoteInfo = "KitBridge (iOS)";
+		};
+		75C6A2CE21262B2900367C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75A0CEE020D997330091D26A;
+			remoteInfo = colorist;
+		};
+		75C6A2D421262D0800367C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DCBEF11ED2C84B00538D87;
+			remoteInfo = "KitBridge (iOS)";
+		};
 		E42ADAA8168202D700295D85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E42ADA87168202D700295D85 /* Project object */;
@@ -103,6 +131,7 @@
 /* Begin PBXFileReference section */
 		1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKMultipleValueSelection.h; sourceTree = "<group>"; };
 		1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKMultipleValueSelection.m; sourceTree = "<group>"; };
+		75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KitBridge.xcodeproj; path = ../KitBridge/KitBridge.xcodeproj; sourceTree = "<group>"; };
 		AA5AB5261C88974100B20124 /* IASKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextView.h; sourceTree = "<group>"; };
 		AA5AB5271C88974100B20124 /* IASKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKTextView.m; sourceTree = "<group>"; };
 		AA5AB5281C88974100B20124 /* IASKTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextViewCell.h; sourceTree = "<group>"; };
@@ -140,7 +169,6 @@
 		E42ADA8F168202D700295D85 /* libInAppSettingsKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInAppSettingsKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42ADA92168202D700295D85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E42ADAA2168202D700295D85 /* InAppSettingsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InAppSettingsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E42ADAA5168202D700295D85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E42ADAAD168202D700295D85 /* InAppSettingsKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InAppSettingsKitTests-Info.plist"; sourceTree = "<group>"; };
 		E42ADAAF168202D700295D85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E42ADAB2168202D700295D85 /* IASSettingsStoreUserDefaultsTests.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = IASSettingsStoreUserDefaultsTests.m; sourceTree = "<group>"; };
@@ -199,6 +227,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C6A2D621262D1700367C24 /* KitBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA627D2919F67B8E0079AAE8 /* MessageUI.framework in Frameworks */,
-				E42ADAA6168202D700295D85 /* UIKit.framework in Frameworks */,
 				E42ADAA7168202D700295D85 /* Foundation.framework in Frameworks */,
 				E42ADAAA168202D700295D85 /* libInAppSettingsKit.a in Frameworks */,
 			);
@@ -225,6 +253,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75C6A2C521262B2900367C24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75C6A2CB21262B2900367C24 /* KitBridge.framework */,
+				75C6A2CD21262B2900367C24 /* KitBridge.framework */,
+				75C6A2CF21262B2900367C24 /* colorist */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AA627D2A19F695F30079AAE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,9 +307,9 @@
 		E42ADA91168202D700295D85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */,
 				AA627D2719F67B7C0079AAE8 /* MessageUI.framework */,
 				E42ADA92168202D700295D85 /* Foundation.framework */,
-				E42ADAA5168202D700295D85 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,8 +368,8 @@
 				E42ADAC51682036500295D85 /* IASKSpecifierValuesViewController.m */,
 				E42ADAC61682036500295D85 /* IASKAppSettingsWebViewController.h */,
 				E42ADAC71682036500295D85 /* IASKAppSettingsWebViewController.m */,
-				1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */,
 				1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */,
+				1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -506,6 +544,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				75C6A2D521262D0800367C24 /* PBXTargetDependency */,
 			);
 			name = InAppSettingsKitFramework;
 			productName = InAppSettingsKitFramework;
@@ -594,6 +633,12 @@
 			mainGroup = E42ADA86168202D700295D85;
 			productRefGroup = E42ADA90168202D700295D85 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 75C6A2C521262B2900367C24 /* Products */;
+					ProjectRef = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E42ADA8E168202D700295D85 /* InAppSettingsKit */,
@@ -602,6 +647,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		75C6A2CB21262B2900367C24 /* KitBridge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KitBridge.framework;
+			remoteRef = 75C6A2CA21262B2900367C24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75C6A2CD21262B2900367C24 /* KitBridge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KitBridge.framework;
+			remoteRef = 75C6A2CC21262B2900367C24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75C6A2CF21262B2900367C24 /* colorist */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = colorist;
+			remoteRef = 75C6A2CE21262B2900367C24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DAC156211B54533D00655031 /* Resources */ = {
@@ -685,6 +754,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		75C6A2D521262D0800367C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KitBridge (iOS)";
+			targetProxy = 75C6A2D421262D0800367C24 /* PBXContainerItemProxy */;
+		};
 		E42ADAA9168202D700295D85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E42ADA8E168202D700295D85 /* InAppSettingsKit */;

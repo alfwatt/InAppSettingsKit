@@ -15,7 +15,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import <KitBridge/KitBridge.h>
 
 #define kIASKPreferenceSpecifiers             @"PreferenceSpecifiers"
 #define kIASKCellImage                        @"IASKCellImage"
