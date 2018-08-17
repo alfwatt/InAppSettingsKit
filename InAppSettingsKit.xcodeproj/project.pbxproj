@@ -82,6 +82,49 @@
 		75C6A32F212630DF00367C24 /* IASKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E401BD4A16820BBA00EAF534 /* IASKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75C6A330212630DF00367C24 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */; };
 		75C6A3362126376900367C24 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A3352126376900367C24 /* WebKit.framework */; };
+		75C6A33F2126840A00367C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A33E2126840A00367C24 /* AppDelegate.swift */; };
+		75C6A3412126840A00367C24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A3402126840A00367C24 /* ViewController.swift */; };
+		75C6A3432126840C00367C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C6A3422126840C00367C24 /* Assets.xcassets */; };
+		75C6A3462126840C00367C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C6A3442126840C00367C24 /* Main.storyboard */; };
+		75C6A3C521274ACA00367C24 /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD21682036500295D85 /* IASKSettingsStoreFile.m */; };
+		75C6A3C621274ACA00367C24 /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADADB1682036500295D85 /* IASKSlider.m */; };
+		75C6A3C721274ACA00367C24 /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAC31682036500295D85 /* IASKAppSettingsViewController.m */; };
+		75C6A3C821274ACA00367C24 /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAC51682036500295D85 /* IASKSpecifierValuesViewController.m */; };
+		75C6A3C921274ACA00367C24 /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADADF1682036500295D85 /* IASKTextField.m */; };
+		75C6A3CA21274ACA00367C24 /* IASKTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5AB5291C88974100B20124 /* IASKTextViewCell.m */; };
+		75C6A3CB21274ACA00367C24 /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADADD1682036500295D85 /* IASKSwitch.m */; };
+		75C6A3CC21274ACA00367C24 /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD71682036500295D85 /* IASKPSTextFieldSpecifierViewCell.m */; };
+		75C6A3CD21274ACA00367C24 /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADACE1682036500295D85 /* IASKSettingsStore.m */; };
+		75C6A3CE21274ACA00367C24 /* IASKMultipleValueSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */; };
+		75C6A3CF21274ACA00367C24 /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADACA1682036500295D85 /* IASKSettingsReader.m */; };
+		75C6A3D021274ACA00367C24 /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAC71682036500295D85 /* IASKAppSettingsWebViewController.m */; };
+		75C6A3D121274ACA00367C24 /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD51682036500295D85 /* IASKPSSliderSpecifierViewCell.m */; };
+		75C6A3D221274ACA00367C24 /* IASKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5AB5271C88974100B20124 /* IASKTextView.m */; };
+		75C6A3D321274ACA00367C24 /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADACC1682036500295D85 /* IASKSpecifier.m */; };
+		75C6A3D421274ACA00367C24 /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD01682036500295D85 /* IASKSettingsStoreUserDefaults.m */; };
+		75C6A3D721274ACA00367C24 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A3352126376900367C24 /* WebKit.framework */; };
+		75C6A3D921274ACA00367C24 /* IASKSettingsStoreFile.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAD11682036500295D85 /* IASKSettingsStoreFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3DA21274ACA00367C24 /* IASKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADADE1682036500295D85 /* IASKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3DB21274ACA00367C24 /* IASKSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADADC1682036500295D85 /* IASKSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3DC21274ACA00367C24 /* IASKSettingsStoreUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADACF1682036500295D85 /* IASKSettingsStoreUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3DD21274ACA00367C24 /* IASKPSSliderSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAD41682036500295D85 /* IASKPSSliderSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3DE21274ACA00367C24 /* IASKSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADADA1682036500295D85 /* IASKSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3DF21274ACA00367C24 /* IASKAppSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC21682036500295D85 /* IASKAppSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E021274ACA00367C24 /* IASKSettingsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC91682036500295D85 /* IASKSettingsReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E121274ACA00367C24 /* IASKSpecifier.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADACB1682036500295D85 /* IASKSpecifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E221274ACA00367C24 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */; };
+		75C6A3E321274ACA00367C24 /* IASKTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5281C88974100B20124 /* IASKTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E421274ACA00367C24 /* IASKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5261C88974100B20124 /* IASKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E521274ACA00367C24 /* IASKPSTextFieldSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAD61682036500295D85 /* IASKPSTextFieldSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E621274ACA00367C24 /* IASKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E401BD4A16820BBA00EAF534 /* IASKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E721274ACA00367C24 /* IASKSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADACD1682036500295D85 /* IASKSettingsStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E821274ACA00367C24 /* IASKSpecifierValuesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC41682036500295D85 /* IASKSpecifierValuesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3E921274ACA00367C24 /* IASKAppSettingsWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC61682036500295D85 /* IASKAppSettingsWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3EA21274ACA00367C24 /* InAppSettingsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC156251B54533D00655031 /* InAppSettingsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C6A3EC21274ACA00367C24 /* IASKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA627D2B19F695F30079AAE8 /* IASKLocalizable.strings */; };
+		75C6A3F421274B3300367C24 /* KitBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A2CB21262B2900367C24 /* KitBridge.framework */; };
+		75C6A3F721274B5300367C24 /* InAppSettingsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A3F021274ACA00367C24 /* InAppSettingsKit.framework */; };
+		75C6A3F821274B5800367C24 /* KitBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A2CB21262B2900367C24 /* KitBridge.framework */; };
 		AA0A85EB1C89C9A70036F778 /* IASKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5261C88974100B20124 /* IASKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0A85EC1C89C9AB0036F778 /* IASKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5AB5271C88974100B20124 /* IASKTextView.m */; };
 		AA0A85ED1C89C9B30036F778 /* IASKTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5281C88974100B20124 /* IASKTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -198,6 +241,27 @@
 			remoteGlobalIDString = 75DCBEE11ED2C81E00538D87;
 			remoteInfo = "KitBridge (macOS)";
 		};
+		75C6A3BB212748DA00367C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75C6A36E21268C5300367C24;
+			remoteInfo = "KitBridge (Swift, macOS)";
+		};
+		75C6A3F221274B2800367C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C6A34D21268C5300367C24;
+			remoteInfo = "KitBridge (Swift, macOS)";
+		};
+		75C6A3F521274B4500367C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E42ADA87168202D700295D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C6A3C121274ACA00367C24;
+			remoteInfo = "InAppSettingsKit.framework (Swift, macOS)";
+		};
 		E42ADAA8168202D700295D85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E42ADA87168202D700295D85 /* Project object */;
@@ -212,9 +276,17 @@
 		1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKMultipleValueSelection.m; sourceTree = "<group>"; };
 		75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KitBridge.xcodeproj; path = ../KitBridge/KitBridge.xcodeproj; sourceTree = "<group>"; };
 		75C6A30521262EC800367C24 /* InAppSettingsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InAppSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75C6A30621262EC800367C24 /* InAppSettingsKitFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "InAppSettingsKitFramework copy-Info.plist"; path = "/Users/alf/Source/InAppSettingsKit/InAppSettingsKitFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		75C6A334212630DF00367C24 /* libInAppSettingsKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInAppSettingsKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C6A3352126376900367C24 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		75C6A33C2126840A00367C24 /* SwiftSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C6A33E2126840A00367C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75C6A3402126840A00367C24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75C6A3422126840C00367C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75C6A3452126840C00367C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75C6A3472126840C00367C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C6A3482126840C00367C24 /* SwiftSettings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftSettings.entitlements; sourceTree = "<group>"; };
+		75C6A34C21268B4400367C24 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75C6A3F021274ACA00367C24 /* InAppSettingsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InAppSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5AB5261C88974100B20124 /* IASKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextView.h; sourceTree = "<group>"; };
 		AA5AB5271C88974100B20124 /* IASKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKTextView.m; sourceTree = "<group>"; };
 		AA5AB5281C88974100B20124 /* IASKTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextViewCell.h; sourceTree = "<group>"; };
@@ -324,6 +396,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75C6A3392126840A00367C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C6A3F821274B5800367C24 /* KitBridge.framework in Frameworks */,
+				75C6A3F721274B5300367C24 /* InAppSettingsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C6A3D521274ACA00367C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C6A3F421274B3300367C24 /* KitBridge.framework in Frameworks */,
+				75C6A3D721274ACA00367C24 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAC1561F1B54533D00655031 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,11 +447,26 @@
 		75C6A2C521262B2900367C24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75C6A2CB21262B2900367C24 /* KitBridge.framework */,
 				75C6A2CD21262B2900367C24 /* KitBridge.framework */,
+				75C6A2CB21262B2900367C24 /* KitBridge.framework */,
+				75C6A3BC212748DA00367C24 /* KitBridge.framework */,
 				75C6A2CF21262B2900367C24 /* colorist */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		75C6A33D2126840A00367C24 /* SwiftSettings */ = {
+			isa = PBXGroup;
+			children = (
+				75C6A34C21268B4400367C24 /* README.md */,
+				75C6A33E2126840A00367C24 /* AppDelegate.swift */,
+				75C6A3402126840A00367C24 /* ViewController.swift */,
+				75C6A3422126840C00367C24 /* Assets.xcassets */,
+				75C6A3442126840C00367C24 /* Main.storyboard */,
+				75C6A3472126840C00367C24 /* Info.plist */,
+				75C6A3482126840C00367C24 /* SwiftSettings.entitlements */,
+			);
+			path = SwiftSettings;
 			sourceTree = "<group>";
 		};
 		AA627D2A19F695F30079AAE8 /* Resources */ = {
@@ -390,9 +495,9 @@
 				E42ADAAB168202D700295D85 /* InAppSettingsKitTests */,
 				E42ADABC1682033800295D85 /* Configurations */,
 				DAC156241B54533D00655031 /* InAppSettingsKitFramework */,
+				75C6A33D2126840A00367C24 /* SwiftSettings */,
 				E42ADA91168202D700295D85 /* Frameworks */,
 				E42ADA90168202D700295D85 /* Products */,
-				75C6A30621262EC800367C24 /* InAppSettingsKitFramework copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -404,6 +509,8 @@
 				DAC156231B54533D00655031 /* InAppSettingsKit.framework */,
 				75C6A30521262EC800367C24 /* InAppSettingsKit.framework */,
 				75C6A334212630DF00367C24 /* libInAppSettingsKit.a */,
+				75C6A33C2126840A00367C24 /* SwiftSettings.app */,
+				75C6A3F021274ACA00367C24 /* InAppSettingsKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -411,8 +518,8 @@
 		E42ADA91168202D700295D85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75C6A3352126376900367C24 /* WebKit.framework */,
 				75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */,
+				75C6A3352126376900367C24 /* WebKit.framework */,
 				AA627D2719F67B7C0079AAE8 /* MessageUI.framework */,
 				E42ADA92168202D700295D85 /* Foundation.framework */,
 			);
@@ -634,6 +741,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75C6A3D821274ACA00367C24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C6A3D921274ACA00367C24 /* IASKSettingsStoreFile.h in Headers */,
+				75C6A3DA21274ACA00367C24 /* IASKTextField.h in Headers */,
+				75C6A3DB21274ACA00367C24 /* IASKSwitch.h in Headers */,
+				75C6A3DC21274ACA00367C24 /* IASKSettingsStoreUserDefaults.h in Headers */,
+				75C6A3DD21274ACA00367C24 /* IASKPSSliderSpecifierViewCell.h in Headers */,
+				75C6A3DE21274ACA00367C24 /* IASKSlider.h in Headers */,
+				75C6A3DF21274ACA00367C24 /* IASKAppSettingsViewController.h in Headers */,
+				75C6A3E021274ACA00367C24 /* IASKSettingsReader.h in Headers */,
+				75C6A3E121274ACA00367C24 /* IASKSpecifier.h in Headers */,
+				75C6A3E221274ACA00367C24 /* IASKMultipleValueSelection.h in Headers */,
+				75C6A3E321274ACA00367C24 /* IASKTextViewCell.h in Headers */,
+				75C6A3E421274ACA00367C24 /* IASKTextView.h in Headers */,
+				75C6A3E521274ACA00367C24 /* IASKPSTextFieldSpecifierViewCell.h in Headers */,
+				75C6A3E621274ACA00367C24 /* IASKViewController.h in Headers */,
+				75C6A3E721274ACA00367C24 /* IASKSettingsStore.h in Headers */,
+				75C6A3E821274ACA00367C24 /* IASKSpecifierValuesViewController.h in Headers */,
+				75C6A3E921274ACA00367C24 /* IASKAppSettingsWebViewController.h in Headers */,
+				75C6A3EA21274ACA00367C24 /* InAppSettingsKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAC156201B54533D00655031 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -722,6 +854,43 @@
 			productReference = 75C6A334212630DF00367C24 /* libInAppSettingsKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		75C6A33B2126840A00367C24 /* SwiftSettings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C6A3492126840C00367C24 /* Build configuration list for PBXNativeTarget "SwiftSettings" */;
+			buildPhases = (
+				75C6A3382126840A00367C24 /* Sources */,
+				75C6A3392126840A00367C24 /* Frameworks */,
+				75C6A33A2126840A00367C24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C6A3F621274B4500367C24 /* PBXTargetDependency */,
+			);
+			name = SwiftSettings;
+			productName = SwiftSettings;
+			productReference = 75C6A33C2126840A00367C24 /* SwiftSettings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (Swift, macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C6A3ED21274ACA00367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (Swift, macOS)" */;
+			buildPhases = (
+				75C6A3C421274ACA00367C24 /* Sources */,
+				75C6A3D521274ACA00367C24 /* Frameworks */,
+				75C6A3D821274ACA00367C24 /* Headers */,
+				75C6A3EB21274ACA00367C24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C6A3F321274B2800367C24 /* PBXTargetDependency */,
+			);
+			name = "InAppSettingsKit.framework (Swift, macOS)";
+			productName = InAppSettingsKitFramework;
+			productReference = 75C6A3F021274ACA00367C24 /* InAppSettingsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		DAC156221B54533D00655031 /* InAppSettingsKit.framework (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAC1562A1B54533D00655031 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (iOS)" */;
@@ -782,10 +951,16 @@
 		E42ADA87168202D700295D85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastTestingUpgradeCheck = 0610;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = InAppSettingsKit;
 				TargetAttributes = {
+					75C6A33B2126840A00367C24 = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = E8G8ARB44Z;
+						ProvisioningStyle = Automatic;
+					};
 					DAC156221B54533D00655031 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -835,7 +1010,9 @@
 				75C6A30A212630DF00367C24 /* InAppSettingsKit.a (macOS) */,
 				DAC156221B54533D00655031 /* InAppSettingsKit.framework (iOS) */,
 				75C6A2D721262EC800367C24 /* InAppSettingsKit.framework (macOS) */,
+				75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (Swift, macOS) */,
 				E42ADAA1168202D700295D85 /* InAppSettingsKitTests */,
+				75C6A33B2126840A00367C24 /* SwiftSettings */,
 			);
 		};
 /* End PBXProject section */
@@ -862,6 +1039,13 @@
 			remoteRef = 75C6A2CE21262B2900367C24 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		75C6A3BC212748DA00367C24 /* KitBridge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KitBridge.framework;
+			remoteRef = 75C6A3BB212748DA00367C24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -870,6 +1054,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C6A30121262EC800367C24 /* IASKLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C6A33A2126840A00367C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C6A3432126840C00367C24 /* Assets.xcassets in Resources */,
+				75C6A3462126840C00367C24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C6A3EB21274ACA00367C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C6A3EC21274ACA00367C24 /* IASKLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +1138,38 @@
 				75C6A319212630DF00367C24 /* IASKTextView.m in Sources */,
 				75C6A31A212630DF00367C24 /* IASKTextField.m in Sources */,
 				75C6A31B212630DF00367C24 /* IASKMultipleValueSelection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C6A3382126840A00367C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C6A3412126840A00367C24 /* ViewController.swift in Sources */,
+				75C6A33F2126840A00367C24 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C6A3C421274ACA00367C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C6A3C521274ACA00367C24 /* IASKSettingsStoreFile.m in Sources */,
+				75C6A3C621274ACA00367C24 /* IASKSlider.m in Sources */,
+				75C6A3C721274ACA00367C24 /* IASKAppSettingsViewController.m in Sources */,
+				75C6A3C821274ACA00367C24 /* IASKSpecifierValuesViewController.m in Sources */,
+				75C6A3C921274ACA00367C24 /* IASKTextField.m in Sources */,
+				75C6A3CA21274ACA00367C24 /* IASKTextViewCell.m in Sources */,
+				75C6A3CB21274ACA00367C24 /* IASKSwitch.m in Sources */,
+				75C6A3CC21274ACA00367C24 /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				75C6A3CD21274ACA00367C24 /* IASKSettingsStore.m in Sources */,
+				75C6A3CE21274ACA00367C24 /* IASKMultipleValueSelection.m in Sources */,
+				75C6A3CF21274ACA00367C24 /* IASKSettingsReader.m in Sources */,
+				75C6A3D021274ACA00367C24 /* IASKAppSettingsWebViewController.m in Sources */,
+				75C6A3D121274ACA00367C24 /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				75C6A3D221274ACA00367C24 /* IASKTextView.m in Sources */,
+				75C6A3D321274ACA00367C24 /* IASKSpecifier.m in Sources */,
+				75C6A3D421274ACA00367C24 /* IASKSettingsStoreUserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,6 +1243,16 @@
 			name = "KitBridge (macOS)";
 			targetProxy = 75C6A30721262EDE00367C24 /* PBXContainerItemProxy */;
 		};
+		75C6A3F321274B2800367C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KitBridge (Swift, macOS)";
+			targetProxy = 75C6A3F221274B2800367C24 /* PBXContainerItemProxy */;
+		};
+		75C6A3F621274B4500367C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (Swift, macOS) */;
+			targetProxy = 75C6A3F521274B4500367C24 /* PBXContainerItemProxy */;
+		};
 		E42ADAA9168202D700295D85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E42ADA8E168202D700295D85 /* InAppSettingsKit.a (iOS) */;
@@ -1018,6 +1261,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		75C6A3442126840C00367C24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C6A3452126840C00367C24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		AA627D2B19F695F30079AAE8 /* IASKLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1070,7 +1321,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "InAppSettingsKitFramework copy-Info.plist";
+				INFOPLIST_FILE = InAppSettingsKitFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1096,7 +1347,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
-				INFOPLIST_FILE = "InAppSettingsKitFramework copy-Info.plist";
+				INFOPLIST_FILE = InAppSettingsKitFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1131,6 +1382,183 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = InAppSettingsKit;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		75C6A34A2126840C00367C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftSettings/SwiftSettings.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E8G8ARB44Z;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftSettings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.labs.SwiftSettings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		75C6A34B2126840C00367C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftSettings/SwiftSettings.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E8G8ARB44Z;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftSettings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.labs.SwiftSettings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		75C6A3EE21274ACA00367C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A3C2E61DA25B7A006CB66E /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InAppSettingsKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inappsettingskit.InAppSettingsKitFramework;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75C6A3EF21274ACA00367C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A3C2E61DA25B7A006CB66E /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = InAppSettingsKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inappsettingskit.InAppSettingsKitFramework;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1270,6 +1698,24 @@
 			buildConfigurations = (
 				75C6A332212630DF00367C24 /* Debug */,
 				75C6A333212630DF00367C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C6A3492126840C00367C24 /* Build configuration list for PBXNativeTarget "SwiftSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C6A34A2126840C00367C24 /* Debug */,
+				75C6A34B2126840C00367C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C6A3ED21274ACA00367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (Swift, macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C6A3EE21274ACA00367C24 /* Debug */,
+				75C6A3EF21274ACA00367C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

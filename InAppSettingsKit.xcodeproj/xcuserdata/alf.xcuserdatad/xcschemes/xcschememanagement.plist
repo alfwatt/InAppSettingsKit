@@ -7,14 +7,19 @@
 		<key>IASKLogicTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>5</integer>
 		</dict>
 		<key>InAppSettingsKit.a (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 		<key>InAppSettingsKit.a (macOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>InAppSettingsKit.framework (Swift, macOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
@@ -22,9 +27,14 @@
 		<key>InAppSettingsKit.framework (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>2</integer>
 		</dict>
 		<key>InAppSettingsKit.framework (macOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>SwiftSettings.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
@@ -33,6 +43,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>75C6A30A212630DF00367C24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75C6A3C121274ACA00367C24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
