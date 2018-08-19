@@ -1,14 +1,8 @@
-//
-//  ViewController.swift
-//  SwiftSettings
-//
-//  Created by Alf Watt on 8/16/18.
-//  Copyright © 2018 InAppSettingsKit. All rights reserved.
-//
 
-import Cocoa
+import KitBridge
+import InAppSettingsKit
 
-class ViewController: NSViewController {
+class SwiftSettingsController: IASKAppSettingsViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +10,12 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
 
+#if os(macOS)
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
-
+#endif
 
 }
-

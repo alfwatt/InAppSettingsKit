@@ -52,7 +52,7 @@ App Integration
 
 In order to start using the `InAppSettings` you must:
 
-- Add `Settings.bundle` to your project (`File` -> `Add File` -> `Settings bundle`)
+- Add `Settings.bundle` to your project (`File` -> `New` ->  `File...` -> `iOS` -> `Settings Bundle`)
 - Go and edit `Root.plist` with your settings. It's fairly self-documenting to start from. Read on to get insight into more advanced uses.
 
 Further integration depends on how your app is structured.

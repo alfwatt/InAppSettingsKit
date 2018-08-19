@@ -1,3 +1,5 @@
 #  SwiftSettings.app
 
-Swift demonstration app for InAppSettingsKit on macOS
+Swift demonstration app for InAppSettingsKit on macOS using KitBridge
+
+## 

@@ -407,7 +407,7 @@ CGRect IASKCGRectSwap(CGRect rect);
     [[NSNotificationCenter defaultCenter]
         postNotificationName:kIASKAppSettingChanged
         object:self
-        userInfo:@{[self.settingsStore objectForKey:[toggle key]]: [toggle key]};
+        userInfo:@{[self.settingsStore objectForKey:[toggle key]]: [toggle key]}];
 #endif
 }
 

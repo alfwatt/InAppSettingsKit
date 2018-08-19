@@ -9,6 +9,52 @@
 /* Begin PBXBuildFile section */
 		1AA106821916565D4D6221F9 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */; };
 		1AA1073290B7DC27EB0C6A70 /* IASKMultipleValueSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */; };
+		75512958212964580085DDF8 /* KitBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A2CD21262B2900367C24 /* KitBridge.framework */; };
+		75512959212964600085DDF8 /* InAppSettingsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7596EBA721293D0700D5A853 /* InAppSettingsKit.framework */; };
+		7551295A212964BD0085DDF8 /* KitBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A2CD21262B2900367C24 /* KitBridge.framework */; };
+		7551295C2129E95D0085DDF8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551295B2129E95D0085DDF8 /* main.swift */; };
+		7551295D2129E95D0085DDF8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551295B2129E95D0085DDF8 /* main.swift */; };
+		7596EB5F2129399B00D5A853 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7596EB5E2129399B00D5A853 /* Settings.bundle */; };
+		7596EB6421293BDD00D5A853 /* SwiftSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A3402126840A00367C24 /* SwiftSettingsController.swift */; };
+		7596EB6521293BDD00D5A853 /* SwiftSettingsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A33E2126840A00367C24 /* SwiftSettingsDelegate.swift */; };
+		7596EB6C21293BDD00D5A853 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7596EB5E2129399B00D5A853 /* Settings.bundle */; };
+		7596EB7621293C7700D5A853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7596EB7521293C7700D5A853 /* Main.storyboard */; };
+		7596EB7821293CA800D5A853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7596EB7721293CA800D5A853 /* Assets.xcassets */; };
+		7596EB7D21293D0700D5A853 /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD21682036500295D85 /* IASKSettingsStoreFile.m */; };
+		7596EB7E21293D0700D5A853 /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADADB1682036500295D85 /* IASKSlider.m */; };
+		7596EB7F21293D0700D5A853 /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAC31682036500295D85 /* IASKAppSettingsViewController.m */; };
+		7596EB8021293D0700D5A853 /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAC51682036500295D85 /* IASKSpecifierValuesViewController.m */; };
+		7596EB8121293D0700D5A853 /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADADF1682036500295D85 /* IASKTextField.m */; };
+		7596EB8221293D0700D5A853 /* IASKTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5AB5291C88974100B20124 /* IASKTextViewCell.m */; };
+		7596EB8321293D0700D5A853 /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADADD1682036500295D85 /* IASKSwitch.m */; };
+		7596EB8421293D0700D5A853 /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD71682036500295D85 /* IASKPSTextFieldSpecifierViewCell.m */; };
+		7596EB8521293D0700D5A853 /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADACE1682036500295D85 /* IASKSettingsStore.m */; };
+		7596EB8621293D0700D5A853 /* IASKMultipleValueSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */; };
+		7596EB8721293D0700D5A853 /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADACA1682036500295D85 /* IASKSettingsReader.m */; };
+		7596EB8821293D0700D5A853 /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAC71682036500295D85 /* IASKAppSettingsWebViewController.m */; };
+		7596EB8921293D0700D5A853 /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD51682036500295D85 /* IASKPSSliderSpecifierViewCell.m */; };
+		7596EB8A21293D0700D5A853 /* IASKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5AB5271C88974100B20124 /* IASKTextView.m */; };
+		7596EB8B21293D0700D5A853 /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADACC1682036500295D85 /* IASKSpecifier.m */; };
+		7596EB8C21293D0700D5A853 /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD01682036500295D85 /* IASKSettingsStoreUserDefaults.m */; };
+		7596EB9021293D0700D5A853 /* IASKSettingsStoreFile.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAD11682036500295D85 /* IASKSettingsStoreFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9121293D0700D5A853 /* IASKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADADE1682036500295D85 /* IASKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9221293D0700D5A853 /* IASKSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADADC1682036500295D85 /* IASKSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9321293D0700D5A853 /* IASKSettingsStoreUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADACF1682036500295D85 /* IASKSettingsStoreUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9421293D0700D5A853 /* IASKPSSliderSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAD41682036500295D85 /* IASKPSSliderSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9521293D0700D5A853 /* IASKSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADADA1682036500295D85 /* IASKSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9621293D0700D5A853 /* IASKAppSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC21682036500295D85 /* IASKAppSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9721293D0700D5A853 /* IASKSettingsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC91682036500295D85 /* IASKSettingsReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9821293D0700D5A853 /* IASKSpecifier.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADACB1682036500295D85 /* IASKSpecifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9921293D0700D5A853 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */; };
+		7596EB9A21293D0700D5A853 /* IASKTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5281C88974100B20124 /* IASKTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9B21293D0700D5A853 /* IASKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5AB5261C88974100B20124 /* IASKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9C21293D0700D5A853 /* IASKPSTextFieldSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAD61682036500295D85 /* IASKPSTextFieldSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9D21293D0700D5A853 /* IASKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E401BD4A16820BBA00EAF534 /* IASKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9E21293D0700D5A853 /* IASKSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADACD1682036500295D85 /* IASKSettingsStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EB9F21293D0700D5A853 /* IASKSpecifierValuesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC41682036500295D85 /* IASKSpecifierValuesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EBA021293D0700D5A853 /* IASKAppSettingsWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC61682036500295D85 /* IASKAppSettingsWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EBA121293D0700D5A853 /* InAppSettingsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC156251B54533D00655031 /* InAppSettingsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7596EBA321293D0700D5A853 /* IASKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA627D2B19F695F30079AAE8 /* IASKLocalizable.strings */; };
 		75C6A2D621262D1700367C24 /* KitBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A2CD21262B2900367C24 /* KitBridge.framework */; };
 		75C6A2DB21262EC800367C24 /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD21682036500295D85 /* IASKSettingsStoreFile.m */; };
 		75C6A2DC21262EC800367C24 /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADADB1682036500295D85 /* IASKSlider.m */; };
@@ -82,8 +128,8 @@
 		75C6A32F212630DF00367C24 /* IASKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E401BD4A16820BBA00EAF534 /* IASKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75C6A330212630DF00367C24 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */; };
 		75C6A3362126376900367C24 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C6A3352126376900367C24 /* WebKit.framework */; };
-		75C6A33F2126840A00367C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A33E2126840A00367C24 /* AppDelegate.swift */; };
-		75C6A3412126840A00367C24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A3402126840A00367C24 /* ViewController.swift */; };
+		75C6A33F2126840A00367C24 /* SwiftSettingsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A33E2126840A00367C24 /* SwiftSettingsDelegate.swift */; };
+		75C6A3412126840A00367C24 /* SwiftSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6A3402126840A00367C24 /* SwiftSettingsController.swift */; };
 		75C6A3432126840C00367C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C6A3422126840C00367C24 /* Assets.xcassets */; };
 		75C6A3462126840C00367C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C6A3442126840C00367C24 /* Main.storyboard */; };
 		75C6A3C521274ACA00367C24 /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E42ADAD21682036500295D85 /* IASKSettingsStoreFile.m */; };
@@ -206,6 +252,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		75512956212964410085DDF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E42ADA87168202D700295D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7596EB7921293D0700D5A853;
+			remoteInfo = "InAppSettingsKit.framework (Swift, iOS)";
+		};
+		7596EB562129396600D5A853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75C6A41B21274CFA00367C24;
+			remoteInfo = "KitBridge (Swift, iOS)";
+		};
+		7596EBA921293D1F00D5A853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C6A3F921274CFA00367C24;
+			remoteInfo = "KitBridge (Swift, iOS)";
+		};
 		75C6A2CA21262B2900367C24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */;
@@ -274,13 +341,19 @@
 /* Begin PBXFileReference section */
 		1AA1013C46B6050E24DEBCE2 /* IASKMultipleValueSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKMultipleValueSelection.h; sourceTree = "<group>"; };
 		1AA10C9888067F44636DBF0D /* IASKMultipleValueSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKMultipleValueSelection.m; sourceTree = "<group>"; };
+		7551295B2129E95D0085DDF8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7596EB5E2129399B00D5A853 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7596EB7021293BDD00D5A853 /* SwiftSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7596EB7521293C7700D5A853 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7596EB7721293CA800D5A853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7596EBA721293D0700D5A853 /* InAppSettingsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InAppSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C6A2C421262B2900367C24 /* KitBridge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KitBridge.xcodeproj; path = ../KitBridge/KitBridge.xcodeproj; sourceTree = "<group>"; };
 		75C6A30521262EC800367C24 /* InAppSettingsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InAppSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C6A334212630DF00367C24 /* libInAppSettingsKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInAppSettingsKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C6A3352126376900367C24 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		75C6A33C2126840A00367C24 /* SwiftSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75C6A33E2126840A00367C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75C6A3402126840A00367C24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75C6A33E2126840A00367C24 /* SwiftSettingsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSettingsDelegate.swift; sourceTree = "<group>"; };
+		75C6A3402126840A00367C24 /* SwiftSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSettingsController.swift; sourceTree = "<group>"; };
 		75C6A3422126840C00367C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C6A3452126840C00367C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75C6A3472126840C00367C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -378,6 +451,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7596EB6621293BDD00D5A853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75512959212964600085DDF8 /* InAppSettingsKit.framework in Frameworks */,
+				75512958212964580085DDF8 /* KitBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7596EB8D21293D0700D5A853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7551295A212964BD0085DDF8 /* KitBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75C6A2EB21262EC800367C24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,11 +534,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7596EB7221293C0C00D5A853 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				75C6A3442126840C00367C24 /* Main.storyboard */,
+				75C6A3422126840C00367C24 /* Assets.xcassets */,
+				75C6A3482126840C00367C24 /* SwiftSettings.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		7596EB7321293C1300D5A853 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7596EB7521293C7700D5A853 /* Main.storyboard */,
+				7596EB7721293CA800D5A853 /* Assets.xcassets */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		7596EB7421293C3700D5A853 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7596EB5E2129399B00D5A853 /* Settings.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		75C6A2C521262B2900367C24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				75C6A2CD21262B2900367C24 /* KitBridge.framework */,
 				75C6A2CB21262B2900367C24 /* KitBridge.framework */,
+				7596EB572129396600D5A853 /* KitBridge.framework */,
 				75C6A3BC212748DA00367C24 /* KitBridge.framework */,
 				75C6A2CF21262B2900367C24 /* colorist */,
 			);
@@ -459,12 +577,13 @@
 			isa = PBXGroup;
 			children = (
 				75C6A34C21268B4400367C24 /* README.md */,
-				75C6A33E2126840A00367C24 /* AppDelegate.swift */,
-				75C6A3402126840A00367C24 /* ViewController.swift */,
-				75C6A3422126840C00367C24 /* Assets.xcassets */,
-				75C6A3442126840C00367C24 /* Main.storyboard */,
 				75C6A3472126840C00367C24 /* Info.plist */,
-				75C6A3482126840C00367C24 /* SwiftSettings.entitlements */,
+				7551295B2129E95D0085DDF8 /* main.swift */,
+				75C6A33E2126840A00367C24 /* SwiftSettingsDelegate.swift */,
+				75C6A3402126840A00367C24 /* SwiftSettingsController.swift */,
+				7596EB7321293C1300D5A853 /* iOS */,
+				7596EB7221293C0C00D5A853 /* macOS */,
+				7596EB7421293C3700D5A853 /* Resources */,
 			);
 			path = SwiftSettings;
 			sourceTree = "<group>";
@@ -511,6 +630,8 @@
 				75C6A334212630DF00367C24 /* libInAppSettingsKit.a */,
 				75C6A33C2126840A00367C24 /* SwiftSettings.app */,
 				75C6A3F021274ACA00367C24 /* InAppSettingsKit.framework */,
+				7596EB7021293BDD00D5A853 /* SwiftSettings.app */,
+				7596EBA721293D0700D5A853 /* InAppSettingsKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -692,6 +813,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7596EB8F21293D0700D5A853 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596EB9021293D0700D5A853 /* IASKSettingsStoreFile.h in Headers */,
+				7596EB9121293D0700D5A853 /* IASKTextField.h in Headers */,
+				7596EB9221293D0700D5A853 /* IASKSwitch.h in Headers */,
+				7596EB9321293D0700D5A853 /* IASKSettingsStoreUserDefaults.h in Headers */,
+				7596EB9421293D0700D5A853 /* IASKPSSliderSpecifierViewCell.h in Headers */,
+				7596EB9521293D0700D5A853 /* IASKSlider.h in Headers */,
+				7596EB9621293D0700D5A853 /* IASKAppSettingsViewController.h in Headers */,
+				7596EB9721293D0700D5A853 /* IASKSettingsReader.h in Headers */,
+				7596EB9821293D0700D5A853 /* IASKSpecifier.h in Headers */,
+				7596EB9921293D0700D5A853 /* IASKMultipleValueSelection.h in Headers */,
+				7596EB9A21293D0700D5A853 /* IASKTextViewCell.h in Headers */,
+				7596EB9B21293D0700D5A853 /* IASKTextView.h in Headers */,
+				7596EB9C21293D0700D5A853 /* IASKPSTextFieldSpecifierViewCell.h in Headers */,
+				7596EB9D21293D0700D5A853 /* IASKViewController.h in Headers */,
+				7596EB9E21293D0700D5A853 /* IASKSettingsStore.h in Headers */,
+				7596EB9F21293D0700D5A853 /* IASKSpecifierValuesViewController.h in Headers */,
+				7596EBA021293D0700D5A853 /* IASKAppSettingsWebViewController.h in Headers */,
+				7596EBA121293D0700D5A853 /* InAppSettingsKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75C6A2ED21262EC800367C24 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -818,6 +964,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7596EB6021293BDD00D5A853 /* SwiftSettings (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7596EB6D21293BDD00D5A853 /* Build configuration list for PBXNativeTarget "SwiftSettings (iOS)" */;
+			buildPhases = (
+				7596EB6321293BDD00D5A853 /* Sources */,
+				7596EB6621293BDD00D5A853 /* Frameworks */,
+				7596EB6921293BDD00D5A853 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75512957212964410085DDF8 /* PBXTargetDependency */,
+			);
+			name = "SwiftSettings (iOS)";
+			productName = SwiftSettings;
+			productReference = 7596EB7021293BDD00D5A853 /* SwiftSettings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7596EB7921293D0700D5A853 /* InAppSettingsKit.framework (iOS, Swift) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7596EBA421293D0700D5A853 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (iOS, Swift)" */;
+			buildPhases = (
+				7596EB8F21293D0700D5A853 /* Headers */,
+				7596EB7C21293D0700D5A853 /* Sources */,
+				7596EB8D21293D0700D5A853 /* Frameworks */,
+				7596EBA221293D0700D5A853 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7596EBAA21293D1F00D5A853 /* PBXTargetDependency */,
+			);
+			name = "InAppSettingsKit.framework (iOS, Swift)";
+			productName = InAppSettingsKitFramework;
+			productReference = 7596EBA721293D0700D5A853 /* InAppSettingsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		75C6A2D721262EC800367C24 /* InAppSettingsKit.framework (macOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75C6A30221262EC800367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (macOS)" */;
@@ -854,9 +1037,9 @@
 			productReference = 75C6A334212630DF00367C24 /* libInAppSettingsKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		75C6A33B2126840A00367C24 /* SwiftSettings */ = {
+		75C6A33B2126840A00367C24 /* SwiftSettings (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75C6A3492126840C00367C24 /* Build configuration list for PBXNativeTarget "SwiftSettings" */;
+			buildConfigurationList = 75C6A3492126840C00367C24 /* Build configuration list for PBXNativeTarget "SwiftSettings (macOS)" */;
 			buildPhases = (
 				75C6A3382126840A00367C24 /* Sources */,
 				75C6A3392126840A00367C24 /* Frameworks */,
@@ -867,18 +1050,18 @@
 			dependencies = (
 				75C6A3F621274B4500367C24 /* PBXTargetDependency */,
 			);
-			name = SwiftSettings;
+			name = "SwiftSettings (macOS)";
 			productName = SwiftSettings;
 			productReference = 75C6A33C2126840A00367C24 /* SwiftSettings.app */;
 			productType = "com.apple.product-type.application";
 		};
-		75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (Swift, macOS) */ = {
+		75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (macOS, Swift) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75C6A3ED21274ACA00367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (Swift, macOS)" */;
+			buildConfigurationList = 75C6A3ED21274ACA00367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (macOS, Swift)" */;
 			buildPhases = (
+				75C6A3D821274ACA00367C24 /* Headers */,
 				75C6A3C421274ACA00367C24 /* Sources */,
 				75C6A3D521274ACA00367C24 /* Frameworks */,
-				75C6A3D821274ACA00367C24 /* Headers */,
 				75C6A3EB21274ACA00367C24 /* Resources */,
 			);
 			buildRules = (
@@ -886,7 +1069,7 @@
 			dependencies = (
 				75C6A3F321274B2800367C24 /* PBXTargetDependency */,
 			);
-			name = "InAppSettingsKit.framework (Swift, macOS)";
+			name = "InAppSettingsKit.framework (macOS, Swift)";
 			productName = InAppSettingsKitFramework;
 			productReference = 75C6A3F021274ACA00367C24 /* InAppSettingsKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -956,6 +1139,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = InAppSettingsKit;
 				TargetAttributes = {
+					7596EB6021293BDD00D5A853 = {
+						DevelopmentTeam = E8G8ARB44Z;
+						ProvisioningStyle = Automatic;
+					};
 					75C6A33B2126840A00367C24 = {
 						CreatedOnToolsVersion = 9.3;
 						DevelopmentTeam = E8G8ARB44Z;
@@ -1009,15 +1196,24 @@
 				E42ADA8E168202D700295D85 /* InAppSettingsKit.a (iOS) */,
 				75C6A30A212630DF00367C24 /* InAppSettingsKit.a (macOS) */,
 				DAC156221B54533D00655031 /* InAppSettingsKit.framework (iOS) */,
+				7596EB7921293D0700D5A853 /* InAppSettingsKit.framework (iOS, Swift) */,
 				75C6A2D721262EC800367C24 /* InAppSettingsKit.framework (macOS) */,
-				75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (Swift, macOS) */,
+				75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (macOS, Swift) */,
 				E42ADAA1168202D700295D85 /* InAppSettingsKitTests */,
-				75C6A33B2126840A00367C24 /* SwiftSettings */,
+				7596EB6021293BDD00D5A853 /* SwiftSettings (iOS) */,
+				75C6A33B2126840A00367C24 /* SwiftSettings (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		7596EB572129396600D5A853 /* KitBridge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KitBridge.framework;
+			remoteRef = 7596EB562129396600D5A853 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		75C6A2CB21262B2900367C24 /* KitBridge.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1049,6 +1245,24 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7596EB6921293BDD00D5A853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596EB6C21293BDD00D5A853 /* Settings.bundle in Resources */,
+				7596EB7621293C7700D5A853 /* Main.storyboard in Resources */,
+				7596EB7821293CA800D5A853 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7596EBA221293D0700D5A853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596EBA321293D0700D5A853 /* IASKLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75C6A30021262EC800367C24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1063,6 +1277,7 @@
 			files = (
 				75C6A3432126840C00367C24 /* Assets.xcassets in Resources */,
 				75C6A3462126840C00367C24 /* Main.storyboard in Resources */,
+				7596EB5F2129399B00D5A853 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,6 +1310,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7596EB6321293BDD00D5A853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596EB6421293BDD00D5A853 /* SwiftSettingsController.swift in Sources */,
+				7596EB6521293BDD00D5A853 /* SwiftSettingsDelegate.swift in Sources */,
+				7551295C2129E95D0085DDF8 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7596EB7C21293D0700D5A853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596EB7D21293D0700D5A853 /* IASKSettingsStoreFile.m in Sources */,
+				7596EB7E21293D0700D5A853 /* IASKSlider.m in Sources */,
+				7596EB7F21293D0700D5A853 /* IASKAppSettingsViewController.m in Sources */,
+				7596EB8021293D0700D5A853 /* IASKSpecifierValuesViewController.m in Sources */,
+				7596EB8121293D0700D5A853 /* IASKTextField.m in Sources */,
+				7596EB8221293D0700D5A853 /* IASKTextViewCell.m in Sources */,
+				7596EB8321293D0700D5A853 /* IASKSwitch.m in Sources */,
+				7596EB8421293D0700D5A853 /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				7596EB8521293D0700D5A853 /* IASKSettingsStore.m in Sources */,
+				7596EB8621293D0700D5A853 /* IASKMultipleValueSelection.m in Sources */,
+				7596EB8721293D0700D5A853 /* IASKSettingsReader.m in Sources */,
+				7596EB8821293D0700D5A853 /* IASKAppSettingsWebViewController.m in Sources */,
+				7596EB8921293D0700D5A853 /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				7596EB8A21293D0700D5A853 /* IASKTextView.m in Sources */,
+				7596EB8B21293D0700D5A853 /* IASKSpecifier.m in Sources */,
+				7596EB8C21293D0700D5A853 /* IASKSettingsStoreUserDefaults.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75C6A2DA21262EC800367C24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1145,8 +1393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C6A3412126840A00367C24 /* ViewController.swift in Sources */,
-				75C6A33F2126840A00367C24 /* AppDelegate.swift in Sources */,
+				75C6A3412126840A00367C24 /* SwiftSettingsController.swift in Sources */,
+				75C6A33F2126840A00367C24 /* SwiftSettingsDelegate.swift in Sources */,
+				7551295D2129E95D0085DDF8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1233,6 +1482,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		75512957212964410085DDF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7596EB7921293D0700D5A853 /* InAppSettingsKit.framework (iOS, Swift) */;
+			targetProxy = 75512956212964410085DDF8 /* PBXContainerItemProxy */;
+		};
+		7596EBAA21293D1F00D5A853 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KitBridge (Swift, iOS)";
+			targetProxy = 7596EBA921293D1F00D5A853 /* PBXContainerItemProxy */;
+		};
 		75C6A2D521262D0800367C24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "KitBridge (iOS)";
@@ -1250,7 +1509,7 @@
 		};
 		75C6A3F621274B4500367C24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (Swift, macOS) */;
+			target = 75C6A3C121274ACA00367C24 /* InAppSettingsKit.framework (macOS, Swift) */;
 			targetProxy = 75C6A3F521274B4500367C24 /* PBXContainerItemProxy */;
 		};
 		E42ADAA9168202D700295D85 /* PBXTargetDependency */ = {
@@ -1310,6 +1569,183 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7596EB6E21293BDD00D5A853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E8G8ARB44Z;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftSettings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.labs.SwiftSettings;
+				PRODUCT_NAME = SwiftSettings;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7596EB6F21293BDD00D5A853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E8G8ARB44Z;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftSettings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.labs.SwiftSettings;
+				PRODUCT_NAME = SwiftSettings;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7596EBA521293D0700D5A853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A3C2E61DA25B7A006CB66E /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InAppSettingsKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inappsettingskit.InAppSettingsKitFramework;
+				PRODUCT_NAME = InAppSettingsKit;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7596EBA621293D0700D5A853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A3C2E61DA25B7A006CB66E /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = InAppSettingsKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inappsettingskit.InAppSettingsKitFramework;
+				PRODUCT_NAME = InAppSettingsKit;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		75C6A30321262EC800367C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4A3C2E61DA25B7A006CB66E /* iOS-Framework.xcconfig */;
@@ -1415,7 +1851,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = SwiftSettings/SwiftSettings.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftSettings/macOS/SwiftSettings.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1444,7 +1880,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.labs.SwiftSettings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSettings;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1482,7 +1918,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = SwiftSettings/SwiftSettings.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftSettings/macOS/SwiftSettings.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1504,7 +1940,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.labs.SwiftSettings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSettings;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
@@ -1684,6 +2120,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7596EB6D21293BDD00D5A853 /* Build configuration list for PBXNativeTarget "SwiftSettings (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7596EB6E21293BDD00D5A853 /* Debug */,
+				7596EB6F21293BDD00D5A853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7596EBA421293D0700D5A853 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (iOS, Swift)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7596EBA521293D0700D5A853 /* Debug */,
+				7596EBA621293D0700D5A853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		75C6A30221262EC800367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1702,7 +2156,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75C6A3492126840C00367C24 /* Build configuration list for PBXNativeTarget "SwiftSettings" */ = {
+		75C6A3492126840C00367C24 /* Build configuration list for PBXNativeTarget "SwiftSettings (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75C6A34A2126840C00367C24 /* Debug */,
@@ -1711,7 +2165,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75C6A3ED21274ACA00367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (Swift, macOS)" */ = {
+		75C6A3ED21274ACA00367C24 /* Build configuration list for PBXNativeTarget "InAppSettingsKit.framework (macOS, Swift)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75C6A3EE21274ACA00367C24 /* Debug */,
